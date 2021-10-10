@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GumRoad Assignment</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body onload="getReviews()">
+    <div class="container">
+      <h1>The Minimalist Entrepreneur.</h1>
+
+      <div id="reviews-section">
+        <div id="aggrigate-raiting">
+          <span class="ratingText" id="aggrigate-rating-text">3.8</span>
+          <div id="aggrigate-rating-star"></div>
+        </div>
+
+        <button type="button" class="btn" id="addReviewBtn">Add Review</button>
+      </div>
+
+      <hr />
+      <div id="reviews">
+        <h1>Review</h1>
+        <div id="review-list"></div>
+      </div>
+    </div>
+
+    <!-- model -->
+    <div id="addReviewModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h1>What’s your rating?</h1>
+        <p>Rating</p>
+        <span id="review-stars"></span>
+        <p>Review</p>
+        <input id="review-text" type="text" placeholder="Start typing...." />
+        <br />
+        <button id="submitNewReview" class="btn">Submit Review</button>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
