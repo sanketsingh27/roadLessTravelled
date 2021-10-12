@@ -26,7 +26,7 @@ function App() {
     <>
       <div className="container">
         <h1>The Minimalist Entrepreneur.</h1>
-        <TopSection averageRating={aveRating} />
+        <TopSection reviews={reviews} setReviews={setReviews} averageRating={aveRating} />
         <br />
         <br />
         <hr />
